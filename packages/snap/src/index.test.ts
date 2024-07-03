@@ -38,18 +38,6 @@ describe('onNameLookup', () => {
     });
   });
 
-  // it('returns resolved domain if address and domain', async () => {
-  //   const request = {
-  //     address: ADDRESS_MOCK,
-  //     domain: DOMAIN_MOCK,
-  //     chainId: CHAIN_ID_MOCK,
-  //   } as any;
-
-  //   expect(await onNameLookup(request)).toStrictEqual({
-  //     resolvedDomains: [{ resolvedDomain: 'clusters/', protocol: 'Clusters' }],
-  //   });
-  // });
-
   it('returns null if no domain or address', async () => {
     const request = {
       chainId: CHAIN_ID_MOCK,
