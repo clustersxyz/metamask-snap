@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "description": "Clusters.xyz name resolution",
+  "proposedName": "Clusters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clustersxyz/metamask-snap.git"
+  },
+  "source": {
+    "shasum": "d4nGUfojkSVap0ifhW++68H5jtxDTJq4sjlmTaJuLIg=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/clusters.svg",
+        "packageName": "snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:name-lookup": {},
+    "endowment:network-access": {}
+  },
+  "manifestVersion": "0.1"
+}
