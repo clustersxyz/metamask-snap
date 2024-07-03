@@ -1,5 +1,5 @@
-import type { OnNameLookupHandler } from '@metamask/snaps-sdk';
 import { Clusters } from '@clustersxyz/sdk';
+import type { OnNameLookupHandler } from '@metamask/snaps-sdk';
 
 const clusters = new Clusters({ apiKey: 'metamask-snap' });
 
