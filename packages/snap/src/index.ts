@@ -8,7 +8,9 @@ export const onNameLookup: OnNameLookupHandler = async (request) => {
 
   if (address) {
     const findClusterName = await clusters.getName(address);
-    if (!findClusterName) return null;
+    if (!findClusterName) {
+      return null;
+    }
 
     return {
       resolvedDomains: [
