@@ -19,6 +19,7 @@ describe('onNameLookup', () => {
         {
           resolvedAddress: '0x5755d1dcea21caa687339c305d143e6e78f96adf',
           protocol: 'Clusters',
+          domainName: 'clusters/',
         },
       ],
     });

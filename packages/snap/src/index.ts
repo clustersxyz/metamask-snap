@@ -17,7 +17,9 @@ export const onNameLookup: OnNameLookupHandler = async (request) => {
     };
   }
 
-  if (!domain) return null;
+  if (!domain) {
+    return null;
+  }
 
   if (domain.includes('/')) {
     const findAddress = await clusters.getAddress(domain);
@@ -26,6 +28,7 @@ export const onNameLookup: OnNameLookupHandler = async (request) => {
         resolvedAddresses: [
           {
             resolvedAddress: findAddress.address,
+            domainName: domain,
             protocol: 'Clusters',
           },
         ],
