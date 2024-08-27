@@ -1,5 +1,9 @@
 import { Clusters } from '@clustersxyz/sdk';
-import type { OnNameLookupHandler } from '@metamask/snaps-sdk';
+import type {
+  OnNameLookupHandler,
+  OnTransactionHandler,
+} from '@metamask/snaps-sdk';
+import { panel, heading, text, row, address } from '@metamask/snaps-sdk';
 
 const clusters = new Clusters({ apiKey: 'metamask-snap' });
 
@@ -39,4 +43,21 @@ export const onNameLookup: OnNameLookupHandler = async (request) => {
   }
 
   return null;
+};
+
+export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
+  if (transaction.to) {
+    const findClusterName = await clusters.getName(transaction.to);
+    const clusterName = findClusterName || 'n/a';
+
+    return {
+      content: panel([
+        heading('Recipient Insights'),
+        row('Cluster', text(clusterName)),
+        row('Address', address(transaction.to as `0x${string}`)),
+      ]),
+    };
+  } else {
+    return null;
+  }
 };

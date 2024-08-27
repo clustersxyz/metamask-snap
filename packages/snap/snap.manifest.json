@@ -7,7 +7,7 @@
     "url": "https://github.com/clustersxyz/metamask-snap.git"
   },
   "source": {
-    "shasum": "lf72ozBMyPO4WCEtgp0fTiE51NB3s4m09nfZFpgCfts=",
+    "shasum": "KDqg1zbjw3BaoswjlyG1UsjdHUbKHbitUGkg3hPE0QI=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
@@ -19,7 +19,8 @@
   },
   "initialPermissions": {
     "endowment:name-lookup": {},
-    "endowment:network-access": {}
+    "endowment:network-access": {},
+    "endowment:transaction-insight": {}
   },
   "manifestVersion": "0.1"
 }
