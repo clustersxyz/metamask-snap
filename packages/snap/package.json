@@ -22,7 +22,7 @@
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "prepublishOnly": "mm-snap manifest",
-    "publish-build": "cp package.json dist && cp README.md dist && cp LICENSE dist",
+    "publish-build": "yarn build && mkdir -p dist/images && cp -R images/* dist/images/",
     "serve": "mm-snap serve",
     "start": "mm-snap watch",
     "test": "jest"
