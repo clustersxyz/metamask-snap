@@ -1,12 +1,12 @@
 {
-  "name": "snap",
+  "name": "clusters",
   "version": "0.1.0",
-  "description": "Clusters.xyz name resolution",
+  "description": "View clusters names natively within your wallet",
   "repository": {
     "type": "git",
     "url": "https://github.com/clustersxyz/metamask-snap.git"
   },
-  "license": "(MIT-0 OR Apache-2.0)",
+  "license": "MIT",
   "main": "./dist/bundle.js",
   "files": [
     "dist/",
@@ -22,6 +22,7 @@
     "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "prepublishOnly": "mm-snap manifest",
+    "publish-build": "yarn build && mkdir -p dist/images && cp -R images/* dist/images/",
     "serve": "mm-snap serve",
     "start": "mm-snap watch",
     "test": "jest"

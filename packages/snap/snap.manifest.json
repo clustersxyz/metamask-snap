@@ -7,12 +7,12 @@
     "url": "https://github.com/clustersxyz/metamask-snap.git"
   },
   "source": {
-    "shasum": "KDqg1zbjw3BaoswjlyG1UsjdHUbKHbitUGkg3hPE0QI=",
+    "shasum": "lXnEhpJ5lp/uNwlwysobncjstDh9UaZUxjdXzfUrK3w=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
         "iconPath": "images/clusters.svg",
-        "packageName": "snap",
+        "packageName": "clusters",
         "registry": "https://registry.npmjs.org/"
       }
     }
