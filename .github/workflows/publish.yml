@@ -32,9 +32,9 @@ jobs:
       - working-directory: packages/snap
         run: |
           yarn install
-          yarn publish-build
+          yarn build
       - name: Publish
         working-directory: packages/snap
         env:
           NODE_AUTH_TOKEN: ${{secrets.CLUSTERS_SDK_NPM_TOKEN}}
-        run: npm publish --dry-run
+        run: npm publish
