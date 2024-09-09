@@ -5,7 +5,7 @@ name: Release Package
 #     types: [created]
 on:
   push:
-      branches: [test-publish]
+    branches: [test-publish]
 
 jobs:
   build:
