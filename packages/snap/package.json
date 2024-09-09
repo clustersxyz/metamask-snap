@@ -1,12 +1,12 @@
 {
-  "name": "snap",
+  "name": "clusters",
   "version": "0.1.0",
-  "description": "Clusters.xyz name resolution",
+  "description": "View clusters names natively within your wallet",
   "repository": {
     "type": "git",
     "url": "https://github.com/clustersxyz/metamask-snap.git"
   },
-  "license": "(MIT-0 OR Apache-2.0)",
+  "license": "MIT",
   "main": "./dist/bundle.js",
   "files": [
     "dist/",
@@ -15,6 +15,7 @@
   "scripts": {
     "allow-scripts": "yarn workspace root allow-scripts",
     "build": "mm-snap build",
+    "publish-build": "cp package.json dist && cp README.md dist && cp LICENSE dist",
     "build:clean": "yarn clean && yarn build",
     "clean": "rimraf dist",
     "lint": "yarn lint:eslint && yarn lint:misc --check",
