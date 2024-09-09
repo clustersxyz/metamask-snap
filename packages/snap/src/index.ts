@@ -8,10 +8,10 @@ import { panel, heading, text, row, address } from '@metamask/snaps-sdk';
 const clusters = new Clusters({ apiKey: 'metamask-snap' });
 
 export const onNameLookup: OnNameLookupHandler = async (request) => {
-  const { address, domain } = request;
+  const { address: addressRequest, domain } = request;
 
-  if (address) {
-    const findClusterName = await clusters.getName(address);
+  if (addressRequest) {
+    const findClusterName = await clusters.getName(addressRequest);
     if (!findClusterName) {
       return null;
     }
@@ -48,7 +48,7 @@ export const onNameLookup: OnNameLookupHandler = async (request) => {
 export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
   if (transaction.to) {
     const findClusterName = await clusters.getName(transaction.to);
-    const clusterName = findClusterName || 'n/a';
+    const clusterName = findClusterName ?? 'n/a';
 
     return {
       content: panel([
@@ -57,7 +57,7 @@ export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
         row('Address', address(transaction.to as `0x${string}`)),
       ]),
     };
-  } else {
-    return null;
   }
+
+  return null;
 };
