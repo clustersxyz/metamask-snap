@@ -1,5 +1,5 @@
 {
-  "name": "clusters",
+  "name": "@clustersxyz/metamask-snap",
   "version": "0.1.0",
   "description": "View clusters names natively within your wallet",
   "repository": {
