@@ -2865,17 +2865,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/json-rpc-engine@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@metamask/json-rpc-engine@npm:9.0.0"
-  dependencies:
-    "@metamask/rpc-errors": ^6.2.1
-    "@metamask/safe-event-emitter": ^3.0.0
-    "@metamask/utils": ^8.3.0
-  checksum: b97170b36843145361015dabc5651df1d2c7f28f0756d3c9c05aef6a483098d562a9983cbe0e15f7fd1a66aa26481132b03ccb9061a2c48f0d3249c1f2348e97
-  languageName: node
-  linkType: hard
-
 "@metamask/json-rpc-engine@npm:^9.0.1, @metamask/json-rpc-engine@npm:^9.0.2":
   version: 9.0.2
   resolution: "@metamask/json-rpc-engine@npm:9.0.2"
@@ -2884,18 +2873,6 @@ __metadata:
     "@metamask/safe-event-emitter": ^3.0.0
     "@metamask/utils": ^9.1.0
   checksum: 4c852c9f30d05706ee497a2aca3ef6df12aabcff4a71a7426a27d95829f20cf2ff45c774eb9d95224bf16c9555a8cd7e44dccaea1bd44eda4dc43bf298885272
-  languageName: node
-  linkType: hard
-
-"@metamask/json-rpc-middleware-stream@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "@metamask/json-rpc-middleware-stream@npm:6.0.2"
-  dependencies:
-    "@metamask/json-rpc-engine": ^7.3.2
-    "@metamask/safe-event-emitter": ^3.0.0
-    "@metamask/utils": ^8.3.0
-    readable-stream: ^3.6.2
-  checksum: e831041b03e9f48f584f4425188f72b58974f95b60429c9fe8b5561da69c6bbfad2f2b2199acdff06ee718967214b65c05604d4f85f3287186619683487f1060
   languageName: node
   linkType: hard
 
@@ -2908,18 +2885,6 @@ __metadata:
     "@metamask/utils": ^8.3.0
     readable-stream: ^3.6.2
   checksum: aacf571a906c3c1d5376e9b1f78d47510b568cc64af26f432dfaa6c6d5480d86e0f8af36855c57a0de95c017313d7ff19bfc396c648aa6ee79f689092154d46b
-  languageName: node
-  linkType: hard
-
-"@metamask/json-rpc-middleware-stream@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@metamask/json-rpc-middleware-stream@npm:8.0.0"
-  dependencies:
-    "@metamask/json-rpc-engine": ^9.0.0
-    "@metamask/safe-event-emitter": ^3.0.0
-    "@metamask/utils": ^8.3.0
-    readable-stream: ^3.6.2
-  checksum: 4bf809366da41744c841dd50d68cf126e1cccda0d78a812154489faa2b0a56bbd511a7bb4e9ccc7c68f2a9a6437f00561bc9423a5b5596badd511a4ff6244c9e
   languageName: node
   linkType: hard
 
@@ -3057,14 +3022,14 @@ __metadata:
   linkType: hard
 
 "@metamask/providers@npm:^16.0.0":
-  version: 16.0.0
-  resolution: "@metamask/providers@npm:16.0.0"
+  version: 16.1.0
+  resolution: "@metamask/providers@npm:16.1.0"
   dependencies:
-    "@metamask/json-rpc-engine": ^7.3.2
-    "@metamask/json-rpc-middleware-stream": ^6.0.2
+    "@metamask/json-rpc-engine": ^8.0.1
+    "@metamask/json-rpc-middleware-stream": ^7.0.1
     "@metamask/object-multiplex": ^2.0.0
     "@metamask/rpc-errors": ^6.2.1
-    "@metamask/safe-event-emitter": ^3.0.0
+    "@metamask/safe-event-emitter": ^3.1.1
     "@metamask/utils": ^8.3.0
     detect-browser: ^5.2.0
     extension-port-stream: ^3.0.0
@@ -3072,34 +3037,13 @@ __metadata:
     is-stream: ^2.0.0
     readable-stream: ^3.6.2
     webextension-polyfill: ^0.10.0
-  checksum: cdc06796111edbf01e9aa8498170f7ffa3c68a4c0f66a629e3b0f7d37ee60eb32d83ee12f285c3d974d971c6af16a3fba531fb5733f5fa9412a18e1d3f648539
+  checksum: 85e40140f342a38112c3d7cee436751a2be4c575cc4f815ab48a73b549abc2d756bf4a10e4b983e91dbd38076601f992531edb6d8d674aebceae32ef7e299275
   languageName: node
   linkType: hard
 
-"@metamask/providers@npm:^17.0.0":
-  version: 17.1.0
-  resolution: "@metamask/providers@npm:17.1.0"
-  dependencies:
-    "@metamask/json-rpc-engine": ^9.0.0
-    "@metamask/json-rpc-middleware-stream": ^8.0.0
-    "@metamask/object-multiplex": ^2.0.0
-    "@metamask/rpc-errors": ^6.2.1
-    "@metamask/safe-event-emitter": ^3.1.1
-    "@metamask/utils": ^8.3.0
-    detect-browser: ^5.2.0
-    extension-port-stream: ^4.1.0
-    fast-deep-equal: ^3.1.3
-    is-stream: ^2.0.0
-    readable-stream: ^3.6.2
-  peerDependencies:
-    webextension-polyfill: ^0.10.0 || ^0.11.0 || ^0.12.0
-  checksum: 1378f7e9a5385536e814190f880cd71bbb0a055b8a234012243ba9f54c5eace1d8bb5324732cb46b3046ad22349a698c1ca3c06402e52675b66e55b9b741f820
-  languageName: node
-  linkType: hard
-
-"@metamask/providers@npm:^17.1.2":
-  version: 17.1.2
-  resolution: "@metamask/providers@npm:17.1.2"
+"@metamask/providers@npm:^17.0.0, @metamask/providers@npm:^17.1.2":
+  version: 17.2.0
+  resolution: "@metamask/providers@npm:17.2.0"
   dependencies:
     "@metamask/json-rpc-engine": ^9.0.1
     "@metamask/json-rpc-middleware-stream": ^8.0.1
@@ -3114,7 +3058,7 @@ __metadata:
     readable-stream: ^3.6.2
   peerDependencies:
     webextension-polyfill: ^0.10.0 || ^0.11.0 || ^0.12.0
-  checksum: 4cfe612649120049abd5d496e02facd86d0851c10e810a3e1289629857da027d77524e6cb8706d38b993bc5fd696bce6f1d33c93bb7d15169b6422e063f205ea
+  checksum: 56e5a974b91699b2d0c5541a61fc6672c34e93eac838cd157ad979847e8885210d90034c25b06856d65d2be6cf42e8047b15a50945fe39e84caadc1b206c1bf4
   languageName: node
   linkType: hard
 
